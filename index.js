@@ -145,9 +145,10 @@ function generate() {
           Math.floor(Math.random() * characters.slice(54, 92).length)
         ]
       );
+    } else {
+      pass1.push(characters[Math.floor(Math.random() * characters.length)]);
+      pass2.push(characters[Math.floor(Math.random() * characters.length)]);
     }
-    // pass1.push(characters[Math.floor(Math.random() * characters.length)]);
-    // pass2.push(characters[Math.floor(Math.random() * characters.length)]);
   }
 
   passLeft.textContent = pass1.join("");
