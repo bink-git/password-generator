@@ -52,7 +52,8 @@ input {
   margin-bottom: 30px;
 }
 
-.numbers, .symbols{
+.numbers,
+.symbols {
   display: flex;
   align-items: center;
 }
@@ -64,7 +65,19 @@ input {
   border-radius: 50px;
   background-color: #40536d;
   position: relative;
-  margin-right: 5px;
+  margin-right: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.tumbler-active {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: white;
+  position: relative;
+  margin-right: 10px;
   display: flex;
   cursor: pointer;
 }
@@ -80,7 +93,7 @@ input {
   left: 3px;
 }
 
-.active {
+.circle-active {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -89,7 +102,7 @@ input {
   position: absolute;
   top: 3px;
   right: 3px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn {
