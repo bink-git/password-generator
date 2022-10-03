@@ -145,10 +145,8 @@ input.addEventListener('input', (e) => {
 });
 
 const passWithLetters = characters.slice(0, 52);
-console.log(passWithLetters);
 
 const passWithNumbers = characters.slice(0, 62);
-console.log(passWithNumbers);
 
 function generate() {
   let pass1 = [];
