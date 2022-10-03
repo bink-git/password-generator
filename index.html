@@ -11,19 +11,28 @@
     <div class="container">
       <h1>Generate a <span>random password</span></h1>
       <p class="sub">Never use an insecure password again.</p>
-      <div class="length">
-        <input type="text" id="num" />
-        <label for="num">Password length</label>
-      </div>
 
-      <div class="tumbler numbers">
-        <span class="circle"></span>
-        <span>Numbers</span>
-      </div>
+      <div class="settings">
 
-      <div class="tumbler symbols">
-        <span class="circle"></span>
-        <span>Symbol</span>
+        <div class="length">
+          <input type="text" id="num" maxlength="2"/>
+          <label for="num">Password length</label>
+        </div>
+  
+        <div class="numbers">
+          <div class="tumbler " id="numCheck">
+            <span class="circle"></span>
+          </div>
+          <span>Numbers</span>
+        </div>
+  
+        <div class="symbols">
+
+          <div class="tumbler" id="symCheck">
+            <span class="circle"></span>
+          </div>
+          <span>Symbols</span>
+        </div>
       </div>
 
       <button class="btn">Generate passwords</button>
